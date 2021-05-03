@@ -6,6 +6,7 @@ public class Solution {
 	 * inputs: 1 - 9 (forms 15 value)
 	 * explanation: https://www.youtube.com/watch?v=zPnN046OM34
 	 * problem NOT SOLVED YET
+	 * https://www.hackerrank.com/challenges/magic-square-forming/problem
 	 */
 	
 	// used to loop through the matrix
