@@ -11,19 +11,22 @@ public class Solution {
 	
 	static int formingMagicSquare(int[][] s) {
 		int result = 0;
-		int[] corner = {8,6,4,2};
-		int[] cross = {9,7,3,1};
-		int middle = 5;
 		
-		if(s[1][1] != middle) {
-			result += Math.abs(s[1][1] - middle);
-		}
-		
+		if((s[0][0] + s[0][1] + s[0][2]) != 15) {
+            result += Math.abs(15 - (s[0][0] + s[0][1] + s[0][2]));
+        }
+        if((s[1][0] + s[1][1] + s[1][2]) != 15) {
+            result += Math.abs(15 - (s[1][0] + s[1][1] + s[1][2]));
+        }
+        if((s[2][0] + s[2][1] + s[2][2]) != 15) {
+            result += Math.abs(15 - (s[2][0] + s[2][1] + s[2][2]));
+        }
 		
 		return result;		
     }
 
 	public static void main(String[] args) {
+		 //expected 14 
 		 int s[][] = {{4,5,8}, 
 				      {2,1,1}, 
 				      {1,9,7}};
